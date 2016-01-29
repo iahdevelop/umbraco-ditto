@@ -36,6 +36,7 @@
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <Private>False</Private>
     </Reference>
@@ -81,11 +82,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComponentModel\Caching\DittoCacheContext.cs" />
+    <Compile Include="ComponentModel\Attributes\DittoCacheableAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\DittoCacheAttribute.cs" />
     <Compile Include="ComponentModel\Attributes\DittoProcessorMetaDataAttribute.cs" />
     <Compile Include="ComponentModel\Processors\AppSettingAttribute.cs" />
     <Compile Include="ComponentModel\Attributes\DittoConversionHandlerAttribute.cs" />
     <Compile Include="ComponentModel\Attributes\DittoOnConvertingAttribute.cs" />
     <Compile Include="ComponentModel\Attributes\DittoOnConvertedAttribute.cs" />
+    <Compile Include="ComponentModel\Caching\DittoCacheBy.cs" />
+    <Compile Include="ComponentModel\Caching\DittoDefaultCacheKeyBuilder.cs" />
+    <Compile Include="ComponentModel\Caching\DittoCacheKeyBuilder.cs" />
+    <Compile Include="ComponentModel\Processors\Contexts\DittoMultiProcessorContext.cs" />
+    <Compile Include="ComponentModel\Processors\Contexts\DittoProcessorContextCache.cs" />
     <Compile Include="ComponentModel\Processors\TryConvertToAttribute.cs" />
     <Compile Include="ComponentModel\Processors\RecursiveDittoAttribute.cs" />
     <Compile Include="ComponentModel\Processors\CurrentContentAttribute.cs" />
@@ -107,7 +116,7 @@
     <Compile Include="ComponentModel\ConversionHandlers\DittoConversionHandlerContext.cs" />
     <Compile Include="ComponentModel\ConversionHandlers\DittoConversionHandler.cs" />
     <Compile Include="ComponentModel\Processors\DittoProcessorRegistry.cs" />
-    <Compile Include="ComponentModel\Processors\DittoProcessorContext.cs" />
+    <Compile Include="ComponentModel\Processors\Contexts\DittoProcessorContext.cs" />
     <Compile Include="ComponentModel\Processors\UltimatePickerAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
